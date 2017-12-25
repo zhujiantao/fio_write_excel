@@ -14,7 +14,7 @@ for io_mode_key in io_mode.keys():
 
 for file_name in fiofile_tuple:
     for grep_content in grep_content_tuple:
-        bw_iops_lat_dict = get_bw_iops_lat_dict(file_name, grep_content, 1, 3)
+        bw_iops_lat_dict = get_bw_iops_lat_dict(file_name, grep_content,  bw_iops_line_num, clat_line_num)
         io_mode_key = grep_content.split(":")[0]
         writeToExcel(workbook, io_mode.get(io_mode_key), row, 2, bw_iops_lat_dict)
     row = row + 1
