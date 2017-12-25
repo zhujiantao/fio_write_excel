@@ -20,3 +20,6 @@ grep_content_tuple = (
 fiofile_count = len(fiofile_tuple)
 
 funciton = "AVERAGE"
+
+bw_iops_line_num = 1
+clat_line_num = 3
